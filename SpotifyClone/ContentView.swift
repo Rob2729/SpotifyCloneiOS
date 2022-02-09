@@ -301,7 +301,7 @@ struct NowPlayingBar: View {
                 .foregroundColor(.gray)
             
             Rectangle()
-                .frame(width: 200, height: 2)
+                .frame(width: 100, height: 2)
                 .foregroundColor(.white)
         }
         
