@@ -293,7 +293,18 @@ struct NowPlayingBar: View {
                     .foregroundColor(.white)
             }
             .padding(.horizontal)
+            
         }
+        ZStack(alignment: .leading) {
+            Rectangle()
+                .frame(width: 400, height: 2)
+                .foregroundColor(.gray)
+            
+            Rectangle()
+                .frame(width: 200, height: 2)
+                .foregroundColor(.white)
+        }
+        
     }
     
 }
