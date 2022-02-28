@@ -31,33 +31,29 @@ struct ContentView: View {
                             
                             Track(isPlaying: false, number: 3, trackCover: "abcdefu", name: "abcdefu", artist: "GAYLE", explicit: true, increase: false, decrease: false)
                             
-                            Track(isPlaying: false, number: 4, trackCover: "Encanto", name: "We Don't Talk About Bruno", artist: "Carolina Gaitan - La Gaita, Mauro Castilo", explicit: false, increase: false, decrease: false)
                             
-                            Track(isPlaying: false, number: 5, trackCover: "Encanto", name: "We Don't Talk About Bruno", artist: "Carolina Gaitan - La Gaita, Mauro Castiloa", explicit: false, increase: false, decrease: false)
+                            Track(isPlaying: false, number: 4, trackCover: "Encanto", name: "We Don't Talk About Bruno", artist: "Carolina Gaitan - La Gaita, Mauro Castiloa", explicit: false, increase: false, decrease: false)
                             
-                            Track(isPlaying: false, number: 6, trackCover: "Overseas", name: "Overseas", artist: "D-Block Europe, Central Cee", explicit: true, increase: false, decrease: false)
+                            Track(isPlaying: false, number: 5, trackCover: "Overseas", name: "Overseas", artist: "D-Block Europe, Central Cee", explicit: true, increase: false, decrease: false)
                             
-                            Track(isPlaying: false, number: 7, trackCover: "abcdefu", name: "abcdefu", artist: "GAYLE", explicit: true, increase: false, decrease: false)
+                            Track(isPlaying: false, number: 6, trackCover: "abcdefu", name: "abcdefu", artist: "GAYLE", explicit: true, increase: false, decrease: false)
                             
-                            Track(isPlaying: false, number: 8, trackCover: "Encanto", name: "We Don't Talk About Bruno", artist: "Carolina Gaitan - La Gaita, Mauro Castilo", explicit: false, increase: false, decrease: true)
+                            Track(isPlaying: false, number: 7, trackCover: "Encanto", name: "We Don't Talk About Bruno", artist: "Carolina Gaitan - La Gaita, Mauro Castilo", explicit: false, increase: false, decrease: true)
                             
-                            Track(isPlaying: false, number: 9, trackCover: "Encanto", name: "We Don't Talk About Bruno", artist: "Carolina Gaitan - La Gaita, Mauro Castiloa", explicit: false, increase: true, decrease: false)
                         }
                         
                         Group {
-                            Track(isPlaying: false, number: 10, trackCover: "Overseas", name: "Overseas", artist: "D-Block Europe, Central Cee", explicit: true, increase: false, decrease: false)
+                            Track(isPlaying: false, number: 8, trackCover: "Overseas", name: "Overseas", artist: "D-Block Europe, Central Cee", explicit: true, increase: false, decrease: false)
                             
-                            Track(isPlaying: false, number: 11, trackCover: "abcdefu", name: "abcdefu", artist: "GAYLE", explicit: true, increase: true, decrease: false)
+                            Track(isPlaying: false, number: 9, trackCover: "abcdefu", name: "abcdefu", artist: "GAYLE", explicit: true, increase: true, decrease: false)
                             
-                            Track(isPlaying: false, number: 12, trackCover: "Encanto", name: "We Don't Talk About Bruno", artist: "Carolina Gaitan - La Gaita, Mauro Castilo", explicit: false, increase: false, decrease: false)
+                            Track(isPlaying: false, number: 10, trackCover: "Encanto", name: "We Don't Talk About Bruno", artist: "Carolina Gaitan - La Gaita, Mauro Castilo", explicit: false, increase: false, decrease: false)
                             
-                            Track(isPlaying: false, number: 13, trackCover: "Encanto", name: "We Don't Talk About Bruno", artist: "Carolina Gaitan - La Gaita, Mauro Castiloa", explicit: false, increase: false, decrease: true)
+                            Track(isPlaying: false, number: 11, trackCover: "Overseas", name: "Overseas", artist: "D-Block Europe, Central Cee", explicit: true, increase: false, decrease: false)
                             
-                            Track(isPlaying: false, number: 14, trackCover: "Overseas", name: "Overseas", artist: "D-Block Europe, Central Cee", explicit: true, increase: false, decrease: false)
+                            Track(isPlaying: false, number: 12, trackCover: "abcdefu", name: "abcdefu", artist: "GAYLE", explicit: true, increase: false, decrease: false)
                             
-                            Track(isPlaying: false, number: 15, trackCover: "abcdefu", name: "abcdefu", artist: "GAYLE", explicit: true, increase: false, decrease: false)
-                            
-                            Track(isPlaying: false, number: 16, trackCover: "Encanto", name: "We Don't Talk About Bruno", artist: "Carolina Gaitan - La Gaita, Mauro Castilo", explicit: false, increase: true, decrease: false)
+                            Track(isPlaying: false, number: 13, trackCover: "Encanto", name: "We Don't Talk About Bruno", artist: "Carolina Gaitan - La Gaita, Mauro Castilo", explicit: false, increase: true, decrease: false)
                         }
                         
                         
@@ -94,17 +90,20 @@ struct ContentView_Previews: PreviewProvider {
 
 struct Cover: View {
     var body : some View {
-        ZStack(alignment: .top) {
+        HStack(alignment: .top, spacing: 50) {
+            
+            Image(systemName: "chevron.left")
+                .foregroundColor(.white)
+            
             Image("topSongsUK")
                 .resizable()
                 .frame(width: 250, height: 250)
                 .shadow(radius: 5)
+            Spacer()
             
-            Image(systemName: "chevron.left")
-                .offset(x: -175)
-                .foregroundColor(.white)
+            
         }
-        .padding(.init(top: 5, leading: 0, bottom: 0, trailing: 0))
+        .padding(.init(top: 5, leading: 20, bottom: 0, trailing: 0))
     }
 }
 
